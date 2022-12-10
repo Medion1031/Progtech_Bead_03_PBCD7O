@@ -15,18 +15,20 @@ public class Player {
     private Position mPosition;
     static public Player msInstance;
 
-    static public Player GetInstance()
+    static public Player GetInstance(int aSizeOfLabyrinth)
     {
         if(msInstance == null)
         {
-            msInstance = new Player();
+            msInstance = new Player(aSizeOfLabyrinth);
         }
         return msInstance;
     }
 
-    private Player()
+    private Player(int aSizeOfLabyrinth)
     {
         mPosition = new Position();
+        mPosition.x = 0;
+        mPosition.y = aSizeOfLabyrinth;
     }
 
     void Move(Movement aMovement)
