@@ -1,6 +1,8 @@
-package Backend;
+package Backend.Entity;
 
-public class Enemy implements Entity{
+import Backend.*;
+
+public class Enemy implements Entity {
     Position mPosition;
     private static Enemy mInstance;
 

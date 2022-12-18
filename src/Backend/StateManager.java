@@ -2,7 +2,7 @@ package Backend;
 
 public class StateManager
 {
-    static void ChangeState(GameState aState)
+    public static void ChangeState(GameState aState)
     {
 
     }

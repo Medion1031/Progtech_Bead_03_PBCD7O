@@ -1,4 +1,6 @@
-package Backend;
+package Backend.Entity;
+
+import Backend.*;
 
 public class Player implements Entity {
     private static Position mPosition = null;

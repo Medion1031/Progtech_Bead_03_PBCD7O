@@ -1,4 +1,4 @@
-package Backend;
+package Backend.Entity;
 
 enum Movement {
     UP,
@@ -6,7 +6,7 @@ enum Movement {
     LEFT,
     RIGHT
 }
-class Position {
+public class Position {
     public int x = 0;
     public int y = 0;
 };

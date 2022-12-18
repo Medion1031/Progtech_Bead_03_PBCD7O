@@ -1,5 +1,7 @@
 package Backend;
 
+import Backend.Entity.Position;
+
 import java.util.ArrayList;
 import java.util.List;
 
