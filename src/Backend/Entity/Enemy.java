@@ -1,6 +1,8 @@
 package Backend.Entity;
 
-import Backend.*;
+import Backend.Data.Position;
+import Backend.StateManagement.GameState;
+import Backend.StateManagement.StateManager;
 
 public class Enemy implements Entity {
     Position mPosition;

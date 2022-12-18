@@ -1,6 +1,6 @@
 package Backend;
 
-import Backend.Entity.Position;
+import Backend.Data.Position;
 
 import java.util.ArrayList;
 import java.util.List;

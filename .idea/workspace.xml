@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b044625a-7eb8-47b0-b951-dfa0d847e9a3" name="Changes" comment="[Enemy Singleton]">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Player.java" afterDir="false" />
-    </list>
+    <list default="true" id="b044625a-7eb8-47b0-b951-dfa0d847e9a3" name="Changes" comment="[Separete Entityes from other classes]" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670690749132</updated>
       <workItem from="1670690750159" duration="2779000" />
-      <workItem from="1671344493414" duration="4395000" />
+      <workItem from="1671344493414" duration="4898000" />
     </task>
     <task id="LOCAL-00001" summary="[Player movement and instancing]">
       <created>1670691737306</created>
@@ -106,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671348035919</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[BoardBuilding and Player.CheckCollisionWithEnd]">
+      <created>1671349002724</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671349002724</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[Separete Entityes from other classes]">
+      <created>1671349375091</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671349375091</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +138,8 @@
     <MESSAGE value="[Created Entity]" />
     <MESSAGE value="[Created StateManager, Enemy and GameBoard]" />
     <MESSAGE value="[Enemy Singleton]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Enemy Singleton]" />
+    <MESSAGE value="[BoardBuilding and Player.CheckCollisionWithEnd]" />
+    <MESSAGE value="[Separete Entityes from other classes]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Separete Entityes from other classes]" />
   </component>
 </project>

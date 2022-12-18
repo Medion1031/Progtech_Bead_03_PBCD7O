@@ -1,4 +1,6 @@
-package Backend;
+package Backend.StateManagement;
+
+import Backend.StateManagement.GameState;
 
 public class StateManager
 {
