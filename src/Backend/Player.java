@@ -1,44 +1,32 @@
 package Backend;
 
-enum Movement {
-    UP,
-    BACK,
-    LEFT,
-    RIGHT
-}
-class Position {
-    public int x = 0;
-    public int y = 0;
-};
-
-public class Player {
-    private Position mPosition;
-    static public Player msInstance;
-
-    static public Player GetInstance(int aSizeOfLabyrinth)
+public class Player implements Entity {
+    Position mPosition = null;
+    static Player mInstance = null;
+    static Player GetInstance(Position aPosition)
     {
-        if(msInstance == null)
+        if(mInstance == null)
         {
-            msInstance = new Player(aSizeOfLabyrinth);
+            mInstance = new Player(aPosition);
         }
-        return msInstance;
+        return mInstance;
     }
 
-    private Player(int aSizeOfLabyrinth)
-    {
-        mPosition = new Position();
-        mPosition.x = 0;
-        mPosition.y = aSizeOfLabyrinth;
-    }
-
-    void Move(Movement aMovement)
-    {
+    @Override
+    public void Move(Movement aMovement) {
         switch (aMovement)
         {
-            case UP: mPosition.x += 1;
-            case BACK: mPosition.x -= 1;
-            case LEFT: mPosition.y -= 1;
-            case RIGHT: mPosition.y += 1;
+            case UP -> mPosition.x += 1;
+            case BACK -> mPosition.x -= 1;
+            case RIGHT -> mPosition.y += 1;
+            case LEFT -> mPosition.y -= 1;
         }
+    }
+
+    private Player(Position aPosition)
+    {
+        mPosition = new Position();
+        mPosition.x = aPosition.x;
+        mPosition.y = aPosition.y;
     }
 }
