@@ -12,6 +12,13 @@ public class Player implements Entity {
         return mInstance;
     }
 
+    private Player(Position aPosition)
+    {
+        mPosition = new Position();
+        mPosition.x = aPosition.x;
+        mPosition.y = aPosition.y;
+    }
+
     @Override
     public void Move(Movement aMovement) {
         switch (aMovement)
@@ -28,13 +35,6 @@ public class Player implements Entity {
         }
     }
 
-    private Player(Position aPosition)
-    {
-        mPosition = new Position();
-        mPosition.x = aPosition.x;
-        mPosition.y = aPosition.y;
-    }
-
     public static Position GetPosition()
     {
         return mPosition;
@@ -42,6 +42,6 @@ public class Player implements Entity {
 
     private boolean CheckCollisionWithEnd()
     {
-        return false;
+        return GameBoard.IsEndPoint(mPosition);
     }
 }

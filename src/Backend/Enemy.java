@@ -13,6 +13,13 @@ public class Enemy implements Entity{
         return mInstance;
     }
 
+    private Enemy(Position aPosition)
+    {
+        mPosition = new Position();
+        mPosition.x = aPosition.x;
+        mPosition.y = aPosition.y;
+    }
+
     @Override
     public void Move(Movement aMovement) {
         switch (aMovement)
@@ -27,13 +34,6 @@ public class Enemy implements Entity{
         {
             StateManager.ChangeState(GameState.PLAYER_CAUGHT);
         }
-    }
-
-    private Enemy(Position aPosition)
-    {
-        mPosition = new Position();
-        mPosition.x = aPosition.x;
-        mPosition.y = aPosition.y;
     }
 
     private boolean CheckCollisionWithPlayer()
