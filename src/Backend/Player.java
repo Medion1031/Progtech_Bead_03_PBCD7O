@@ -1,7 +1,7 @@
 package Backend;
 
 public class Player implements Entity {
-    Position mPosition = null;
+    private static Position mPosition = null;
     static Player mInstance = null;
     static Player GetInstance(Position aPosition)
     {
@@ -28,5 +28,10 @@ public class Player implements Entity {
         mPosition = new Position();
         mPosition.x = aPosition.x;
         mPosition.y = aPosition.y;
+    }
+
+    public static Position GetPosition()
+    {
+        return mPosition;
     }
 }
