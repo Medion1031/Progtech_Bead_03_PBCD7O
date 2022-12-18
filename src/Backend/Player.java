@@ -21,6 +21,11 @@ public class Player implements Entity {
             case RIGHT -> mPosition.y += 1;
             case LEFT -> mPosition.y -= 1;
         }
+
+        if(CheckCollisionWithEnd())
+        {
+            StateManager.ChangeState(GameState.PLAYER_WON);
+        }
     }
 
     private Player(Position aPosition)
@@ -33,5 +38,10 @@ public class Player implements Entity {
     public static Position GetPosition()
     {
         return mPosition;
+    }
+
+    private boolean CheckCollisionWithEnd()
+    {
+        return false;
     }
 }
