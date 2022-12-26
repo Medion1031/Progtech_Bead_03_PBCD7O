@@ -1,11 +1,10 @@
 package Backend.StateManagement;
 
-import Backend.StateManagement.GameState;
-
 public class StateManager
 {
+    public static GameState mCurrentState;
     public static void ChangeState(GameState aState)
     {
-
+        mCurrentState = aState;
     }
 }

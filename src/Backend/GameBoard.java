@@ -29,12 +29,7 @@ public class GameBoard {
 
     public static boolean IsEndPoint(Position aPosition)
     {
-        if(mEnd.x == aPosition.x && mEnd.y == aPosition.y)
-        {
-            return true;
-        }
-
-        return false;
+        return mEnd.x == aPosition.x && mEnd.y == aPosition.y;
     }
 
     public static void AddBoardTile(Character aTileType)
