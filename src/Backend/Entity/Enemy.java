@@ -58,11 +58,17 @@ public class Enemy implements Entity {
             {
                 return mPosition.x;
             }
+            if(newPosition == Player.GetPosition())
+            {
+                StateManager.ChangeState(GameState.PLAYER_CAUGHT);
+            }
+
 
             return newPosition.x;
         }
 
         newPosition.y = mPosition.y + aDelta;
+
         if(newPosition.y > GameBoard.mBoard.get(0).size() || newPosition.y < 0)
         {
             return mPosition.y;
@@ -70,6 +76,10 @@ public class Enemy implements Entity {
         if(GameBoard.mBoard.get(newPosition.x).get(newPosition.y) == 'W')
         {
             return mPosition.y;
+        }
+        if(newPosition == Player.GetPosition())
+        {
+            StateManager.ChangeState(GameState.PLAYER_CAUGHT);
         }
 
         return newPosition.y;
