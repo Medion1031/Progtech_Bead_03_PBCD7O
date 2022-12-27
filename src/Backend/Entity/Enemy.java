@@ -1,6 +1,7 @@
 package Backend.Entity;
 
 import Backend.Data.Position;
+import Backend.GameBoard;
 import Backend.StateManagement.GameState;
 import Backend.StateManagement.StateManager;
 
@@ -28,16 +29,50 @@ public class Enemy implements Entity {
     public void Move(Movement aMovement) {
         switch (aMovement)
         {
-            case UP -> mPosition.x += 1;
-            case BACK -> mPosition.x -= 1;
-            case RIGHT -> mPosition.y += 1;
-            case LEFT -> mPosition.y -= 1;
+            case UP -> mPosition.x = CheckTile(1, true);
+            case BACK -> mPosition.x = CheckTile(-1, true);
+            case RIGHT -> mPosition.y = CheckTile(1, false);
+            case LEFT -> mPosition.y = CheckTile(-1, false);
         }
 
         if(CheckCollisionWithPlayer())
         {
             StateManager.ChangeState(GameState.PLAYER_CAUGHT);
         }
+    }
+
+    @Override
+    public int CheckTile(int aDelta, boolean aIsXChanged) {
+        Position newPosition = new Position();
+        newPosition.x = mPosition.x;
+        newPosition.y = mPosition.y;
+
+        if(aIsXChanged)
+        {
+            newPosition.x = mPosition.x + aDelta;
+            if(newPosition.x > GameBoard.mBoard.size() || newPosition.x < 0)
+            {
+                return mPosition.x;
+            }
+            if(GameBoard.mBoard.get(newPosition.x).get(newPosition.y) == 'W')
+            {
+                return mPosition.x;
+            }
+
+            return newPosition.x;
+        }
+
+        newPosition.y = mPosition.y + aDelta;
+        if(newPosition.y > GameBoard.mBoard.get(0).size() || newPosition.y < 0)
+        {
+            return mPosition.y;
+        }
+        if(GameBoard.mBoard.get(newPosition.x).get(newPosition.y) == 'W')
+        {
+            return mPosition.y;
+        }
+
+        return newPosition.y;
     }
 
     private boolean CheckCollisionWithPlayer()

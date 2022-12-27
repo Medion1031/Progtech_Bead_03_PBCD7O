@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GameBoard {
-    private static List<List<Character>> mBoard;
+    public static List<List<Character>> mBoard;
     private static GameBoard mInstance;
     private static Position mEnd;
     static int mXIterator = 0;

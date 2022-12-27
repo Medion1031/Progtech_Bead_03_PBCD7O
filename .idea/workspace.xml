@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b044625a-7eb8-47b0-b951-dfa0d847e9a3" name="Changes" comment="[Separete Entityes from other classes 2.0]">
-      <change afterPath="$PROJECT_DIR$/src/Backend/Data/FileLoader.java" afterDir="false" />
+    <list default="true" id="b044625a-7eb8-47b0-b951-dfa0d847e9a3" name="Changes" comment="[FileLoader]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Entity/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Entity/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backend/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/StateManagement/StateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/StateManagement/StateManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +40,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -69,7 +71,8 @@
       <option name="presentableId" value="Default" />
       <updated>1670690749132</updated>
       <workItem from="1670690750159" duration="2779000" />
-      <workItem from="1671344493414" duration="7834000" />
+      <workItem from="1671344493414" duration="8980000" />
+      <workItem from="1672088845553" duration="1791000" />
     </task>
     <task id="LOCAL-00001" summary="[Player movement and instancing]">
       <created>1670691737306</created>
@@ -127,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671349562122</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[FileLoader]">
+      <created>1672063651135</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672063651135</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +163,7 @@
     <MESSAGE value="[BoardBuilding and Player.CheckCollisionWithEnd]" />
     <MESSAGE value="[Separete Entityes from other classes]" />
     <MESSAGE value="[Separete Entityes from other classes 2.0]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Separete Entityes from other classes 2.0]" />
+    <MESSAGE value="[FileLoader]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FileLoader]" />
   </component>
 </project>
