@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b044625a-7eb8-47b0-b951-dfa0d847e9a3" name="Changes" comment="[Movement check if the next tile is valid]">
+    <list default="true" id="b044625a-7eb8-47b0-b951-dfa0d847e9a3" name="Changes" comment="[Check if the monster caught the player]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Entity/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Entity/Enemy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,7 @@
       <updated>1670690749132</updated>
       <workItem from="1670690750159" duration="2779000" />
       <workItem from="1671344493414" duration="8980000" />
-      <workItem from="1672088845553" duration="1948000" />
+      <workItem from="1672088845553" duration="3282000" />
     </task>
     <task id="LOCAL-00001" summary="[Player movement and instancing]">
       <created>1670691737306</created>
@@ -140,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672132014450</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[Check if the monster caught the player]">
+      <created>1672132166007</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672132166007</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +174,7 @@
     <MESSAGE value="[Separete Entityes from other classes 2.0]" />
     <MESSAGE value="[FileLoader]" />
     <MESSAGE value="[Movement check if the next tile is valid]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Movement check if the next tile is valid]" />
+    <MESSAGE value="[Check if the monster caught the player]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Check if the monster caught the player]" />
   </component>
 </project>
