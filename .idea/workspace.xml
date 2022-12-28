@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b044625a-7eb8-47b0-b951-dfa0d847e9a3" name="Changes" comment="[Check if the monster caught the player]">
+    <list default="true" id="b044625a-7eb8-47b0-b951-dfa0d847e9a3" name="Changes" comment="[Tile resources]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +37,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -44,10 +48,18 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Resources" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -67,7 +79,8 @@
       <updated>1670690749132</updated>
       <workItem from="1670690750159" duration="2779000" />
       <workItem from="1671344493414" duration="8980000" />
-      <workItem from="1672088845553" duration="3282000" />
+      <workItem from="1672088845553" duration="6196000" />
+      <workItem from="1672223325674" duration="572000" />
     </task>
     <task id="LOCAL-00001" summary="[Player movement and instancing]">
       <created>1670691737306</created>
@@ -146,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672132166007</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="[Tile resources]">
+      <created>1672143393004</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1672143393004</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +195,7 @@
     <MESSAGE value="[FileLoader]" />
     <MESSAGE value="[Movement check if the next tile is valid]" />
     <MESSAGE value="[Check if the monster caught the player]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Check if the monster caught the player]" />
+    <MESSAGE value="[Tile resources]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Tile resources]" />
   </component>
 </project>
