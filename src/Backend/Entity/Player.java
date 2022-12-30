@@ -1,14 +1,14 @@
 package Backend.Entity;
 
-import Backend.*;
 import Backend.Data.Position;
 import Backend.StateManagement.GameState;
 import Backend.StateManagement.StateManager;
+import Backend.UIBuilder.BoardBuilder;
 
 public class Player implements Entity {
     private static Position mPosition = null;
     static Player mInstance = null;
-    static Player GetInstance(Position aPosition)
+    public static Player GetInstance(Position aPosition)
     {
         if(mInstance == null)
         {
@@ -19,7 +19,7 @@ public class Player implements Entity {
 
     private Player(Position aPosition)
     {
-        mPosition = new Position();
+        mPosition = new Position(1, 1);
         mPosition.x = aPosition.x;
         mPosition.y = aPosition.y;
     }
@@ -36,24 +36,24 @@ public class Player implements Entity {
 
         if(CheckCollisionWithEnd())
         {
-            StateManager.ChangeState(GameState.PLAYER_WON);
+            StateManager.ChangeState(GameState.GAME_ENDED);
         }
     }
 
     @Override
     public int CheckTile(int aDelta, boolean aIsXChanged) {
-        Position newPosition = new Position();
+        Position newPosition = new Position(2, 2);
         newPosition.x = mPosition.x;
         newPosition.y = mPosition.y;
 
         if(aIsXChanged)
         {
             newPosition.x = mPosition.x + aDelta;
-            if(newPosition.x > GameBoard.mBoard.size() || newPosition.x < 0)
+            if(newPosition.x >= BoardBuilder.mCurrentMap.size() || newPosition.x < 0)
             {
                 return mPosition.x;
             }
-            if(GameBoard.mBoard.get(newPosition.x).get(newPosition.y) == 'W')
+            if(BoardBuilder.mCurrentMap.get(newPosition.x).get(newPosition.y) == 'W')
             {
                 return mPosition.x;
             }
@@ -62,11 +62,11 @@ public class Player implements Entity {
         }
 
         newPosition.y = mPosition.y + aDelta;
-        if(newPosition.y > GameBoard.mBoard.get(0).size() || newPosition.y < 0)
+        if(newPosition.y >= BoardBuilder.mCurrentMap.get(0).size() || newPosition.y < 0)
         {
             return mPosition.y;
         }
-        if(GameBoard.mBoard.get(newPosition.x).get(newPosition.y) == 'W')
+        if(BoardBuilder.mCurrentMap.get(newPosition.x).get(newPosition.y) == 'W')
         {
             return mPosition.y;
         }
@@ -81,6 +81,6 @@ public class Player implements Entity {
 
     private boolean CheckCollisionWithEnd()
     {
-        return GameBoard.IsEndPoint(mPosition);
+        return BoardBuilder.IsEnd(mPosition);
     }
 }

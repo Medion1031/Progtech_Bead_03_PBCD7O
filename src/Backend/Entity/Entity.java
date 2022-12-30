@@ -2,12 +2,6 @@ package Backend.Entity;
 
 import Backend.Data.Position;
 
-enum Movement {
-    UP,
-    BACK,
-    LEFT,
-    RIGHT
-}
 ;
 public interface Entity {
     static Entity GetInstance(Position startPosition) { return null; }
