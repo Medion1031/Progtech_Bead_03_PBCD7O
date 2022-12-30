@@ -58,4 +58,14 @@ public class DatabaseController {
             throw new RuntimeException(e);
         }
     }
+
+    public static void Disconnect()
+    {
+        try {
+            dataConnection.close();
+            System.out.println("Disconnected!");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

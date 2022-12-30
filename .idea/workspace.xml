@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b044625a-7eb8-47b0-b951-dfa0d847e9a3" name="Changes" comment="[Tile resources]">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backend/Database/DatabaseController.java" afterDir="false" />
+    <list default="true" id="b044625a-7eb8-47b0-b951-dfa0d847e9a3" name="Changes" comment="[Database connection and connection controller donne]">
+      <change afterPath="$PROJECT_DIR$/src/Frontend/MainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frontend/UIComponents/ButtonComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progtech_Bead_03_PBCD7O.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Progtech_Bead_03_PBCD7O.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Database/DatabaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Database/DatabaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/StateManagement/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/StateManagement/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/StateManagement/StateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/StateManagement/StateManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +92,7 @@
       <workItem from="1670690750159" duration="2779000" />
       <workItem from="1671344493414" duration="8980000" />
       <workItem from="1672088845553" duration="6196000" />
-      <workItem from="1672223325674" duration="5489000" />
+      <workItem from="1672223325674" duration="12011000" />
     </task>
     <task id="LOCAL-00001" summary="[Player movement and instancing]">
       <created>1670691737306</created>
@@ -178,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672143393004</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[Database connection and connection controller donne]">
+      <created>1672308120882</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1672308120882</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +215,7 @@
     <MESSAGE value="[Movement check if the next tile is valid]" />
     <MESSAGE value="[Check if the monster caught the player]" />
     <MESSAGE value="[Tile resources]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Tile resources]" />
+    <MESSAGE value="[Database connection and connection controller donne]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Database connection and connection controller donne]" />
   </component>
 </project>
