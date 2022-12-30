@@ -36,7 +36,7 @@ public class Player implements Entity {
 
         if(CheckCollisionWithEnd())
         {
-            StateManager.ChangeState(GameState.PLAYER_WON);
+            StateManager.ChangeState(GameState.GAME_ENDED);
         }
     }
 

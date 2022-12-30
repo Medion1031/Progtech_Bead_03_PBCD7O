@@ -37,7 +37,7 @@ public class Enemy implements Entity {
 
         if(CheckCollisionWithPlayer())
         {
-            StateManager.ChangeState(GameState.PLAYER_CAUGHT);
+            StateManager.ChangeState(GameState.GAME_ENDED);
         }
     }
 
@@ -60,7 +60,7 @@ public class Enemy implements Entity {
             }
             if(newPosition == Player.GetPosition())
             {
-                StateManager.ChangeState(GameState.PLAYER_CAUGHT);
+                StateManager.ChangeState(GameState.GAME_ENDED);
             }
 
 
@@ -79,7 +79,7 @@ public class Enemy implements Entity {
         }
         if(newPosition == Player.GetPosition())
         {
-            StateManager.ChangeState(GameState.PLAYER_CAUGHT);
+            StateManager.ChangeState(GameState.GAME_ENDED);
         }
 
         return newPosition.y;

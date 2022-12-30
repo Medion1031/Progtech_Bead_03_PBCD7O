@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b044625a-7eb8-47b0-b951-dfa0d847e9a3" name="Changes" comment="[LeaderBoard donne]">
+    <list default="true" id="b044625a-7eb8-47b0-b951-dfa0d847e9a3" name="Changes" comment="[LeaderBoard donne (minor change 01)]">
+      <change afterPath="$PROJECT_DIR$/src/Frontend/GameView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frontend/ScoreBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/ScoreBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Entity/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Entity/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/StateManagement/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/StateManagement/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/StateManagement/StateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/StateManagement/StateManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +91,7 @@
       <workItem from="1670690750159" duration="2779000" />
       <workItem from="1671344493414" duration="8980000" />
       <workItem from="1672088845553" duration="6196000" />
-      <workItem from="1672223325674" duration="14364000" />
+      <workItem from="1672223325674" duration="17900000" />
     </task>
     <task id="LOCAL-00001" summary="[Player movement and instancing]">
       <created>1670691737306</created>
@@ -194,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672397379624</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[LeaderBoard donne (minor change 01)]">
+      <created>1672398032182</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1672398032182</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +238,7 @@
     <MESSAGE value="[Database connection and connection controller donne]" />
     <MESSAGE value="[Main menu and exitApp with Disconnect]" />
     <MESSAGE value="[LeaderBoard donne]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[LeaderBoard donne]" />
+    <MESSAGE value="[LeaderBoard donne (minor change 01)]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[LeaderBoard donne (minor change 01)]" />
   </component>
 </project>
