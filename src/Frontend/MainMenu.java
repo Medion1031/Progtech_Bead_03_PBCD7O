@@ -40,9 +40,9 @@ public class MainMenu extends JFrame
 
         add(mContainer);
 
-        this.setPreferredSize(new Dimension(height, width));
-        this.setMaximumSize(new Dimension(height, width));
-        this.setMinimumSize(new Dimension(height, width));
+        this.setPreferredSize(new Dimension(width, height));
+        this.setMaximumSize(new Dimension(width, height));
+        this.setMinimumSize(new Dimension(width, height));
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);

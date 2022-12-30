@@ -1,6 +1,8 @@
 package Backend.StateManagement;
 
 import Backend.Database.DatabaseController;
+import Frontend.ScoreBoard;
+import com.mysql.cj.x.protobuf.MysqlxCursor;
 
 public class StateManager
 {
@@ -12,6 +14,7 @@ public class StateManager
         switch (aState)
         {
             case EXIT_APP -> ExitAppAction();
+            case LEADER_BOARD -> OpenLeaderBoard();
         }
     }
 
@@ -19,5 +22,10 @@ public class StateManager
     {
         DatabaseController.Disconnect();
         System.exit(0);
+    }
+
+    private static void OpenLeaderBoard()
+    {
+        new ScoreBoard(400, 400);
     }
 }
