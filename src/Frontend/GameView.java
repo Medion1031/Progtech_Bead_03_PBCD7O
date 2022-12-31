@@ -1,5 +1,6 @@
 package Frontend;
 
+<<<<<<< HEAD
 import Backend.Data.Position;
 import Backend.Entity.Enemy;
 import Backend.Entity.Movement;
@@ -11,6 +12,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+=======
+import Backend.StateManagement.StateManager;
+
+import javax.swing.*;
+import java.awt.*;
+>>>>>>> origin/main
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.math.BigDecimal;
@@ -18,12 +25,17 @@ import java.math.RoundingMode;
 import java.util.Timer;
 import java.util.TimerTask;
 
+<<<<<<< HEAD
 public class GameView extends JFrame implements KeyListener
+=======
+public class GameView extends JFrame
+>>>>>>> origin/main
 {
     String mName = "";
     float mTimePlayed = 0.0f;
     int mTimePassedInMs = 0;
     public static boolean mRunning = true;
+<<<<<<< HEAD
     MapComponent mapComponent = null;
     JPanel gameBoard;
     int width, height;
@@ -37,11 +49,22 @@ public class GameView extends JFrame implements KeyListener
         JPanel timerPanel = new JPanel();
         JPanel gameBoardHolder = new JPanel();
         gameBoard = new JPanel();
+=======
+    public GameView(int width, int height)
+    {
+        Timer tm = new Timer();
+
+
+
+        JLabel timerLabel = new JLabel("0.0s");
+        JPanel timerPanel = new JPanel();
+>>>>>>> origin/main
 
         timerLabel.setLocation(20, 0);
         timerLabel.setForeground(Color.BLACK);
         timerLabel.setSize(new Dimension(200, 40));
 
+<<<<<<< HEAD
         mapComponent = new MapComponent(width, height);
 
 
@@ -61,6 +84,14 @@ public class GameView extends JFrame implements KeyListener
 
         setLayout(null);
 
+=======
+        timerPanel.add(timerLabel);
+        timerPanel.setLayout(null);
+
+        add(timerPanel);
+
+        setLayout(new BoxLayout(getContentPane(), BoxLayout.PAGE_AXIS));
+>>>>>>> origin/main
         this.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent evt) {
                 ExitGame();
@@ -72,7 +103,10 @@ public class GameView extends JFrame implements KeyListener
             public void run() {
                 if(mRunning)
                 {
+<<<<<<< HEAD
                     System.out.println(Enemy.GetPosition().x + " - " + Enemy.GetPosition().y);
+=======
+>>>>>>> origin/main
                     mTimePassedInMs++;
                     mTimePlayed = BigDecimal.valueOf((float) mTimePassedInMs / 60.0f).setScale(2, RoundingMode.HALF_DOWN)
                             .floatValue();
@@ -82,9 +116,14 @@ public class GameView extends JFrame implements KeyListener
             }
         }, 100, 100);
 
+<<<<<<< HEAD
         addKeyListener(this);
         this.setPreferredSize(new Dimension(width, height));
         //this.setMaximumSize(new Dimension(width, height));
+=======
+        this.setPreferredSize(new Dimension(width, height));
+        this.setMaximumSize(new Dimension(width, height));
+>>>>>>> origin/main
         this.setMinimumSize(new Dimension(width, height));
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -106,6 +145,7 @@ public class GameView extends JFrame implements KeyListener
 
         StateManager.ExitGame(mName, mTimePlayed);
     }
+<<<<<<< HEAD
 
     @Override
     public void keyTyped(KeyEvent e) {
@@ -148,4 +188,6 @@ public class GameView extends JFrame implements KeyListener
     public void keyReleased(KeyEvent e) {
 
     }
+=======
+>>>>>>> origin/main
 }

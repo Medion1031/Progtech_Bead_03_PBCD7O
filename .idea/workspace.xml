@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b044625a-7eb8-47b0-b951-dfa0d847e9a3" name="Changes" comment="[GameView Timer donne]">
-      <change afterPath="$PROJECT_DIR$/src/Backend/Entity/Movement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backend/UIBuilder/BoardBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frontend/UIComponents/MapComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/Maps/map01.txt" afterDir="false" />
+    <list default="true" id="b044625a-7eb8-47b0-b951-dfa0d847e9a3" name="Changes" comment="[LeaderBoard donne]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Data/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Data/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Entity/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Entity/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/GameBoard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/StateManagement/StateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/StateManagement/StateManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frontend/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/GameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/ScoreBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/ScoreBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +87,7 @@
       <workItem from="1670690750159" duration="2779000" />
       <workItem from="1671344493414" duration="8980000" />
       <workItem from="1672088845553" duration="6196000" />
-      <workItem from="1672223325674" duration="30888000" />
+      <workItem from="1672223325674" duration="14364000" />
     </task>
     <task id="LOCAL-00001" summary="[Player movement and instancing]">
       <created>1670691737306</created>
@@ -205,21 +194,7 @@
       <option name="project" value="LOCAL" />
       <updated>1672397379624</updated>
     </task>
-    <task id="LOCAL-00016" summary="[LeaderBoard donne (minor change 01)]">
-      <created>1672398032182</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1672398032182</updated>
-    </task>
-    <task id="LOCAL-00017" summary="[GameView Timer donne]">
-      <created>1672406778956</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1672406778956</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,24 +227,6 @@
     <MESSAGE value="[Database connection and connection controller donne]" />
     <MESSAGE value="[Main menu and exitApp with Disconnect]" />
     <MESSAGE value="[LeaderBoard donne]" />
-    <MESSAGE value="[LeaderBoard donne (minor change 01)]" />
-    <MESSAGE value="[GameView Timer donne]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[GameView Timer donne]" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Backend/StateManagement/StateManager.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Backend/UIBuilder/BoardBuilder.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="[LeaderBoard donne]" />
   </component>
 </project>
